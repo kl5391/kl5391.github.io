@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
 import { Terminal } from "primereact/terminal";
 import { TerminalService } from "primereact/terminalservice";
+import SocialMediaDialog from "./social-media-dialog";
+import { useState } from "react";
 
 export default function MediaTerminal() {
+  const [visible, setVisible] = useState(false);
+
   const commandHandler = (text) => {
     let response;
     let argsIndex = text.indexOf(" ");
@@ -11,6 +15,7 @@ export default function MediaTerminal() {
     switch (command) {
       case "getInfo":
         response = "Let's do this!";
+        setVisible(true);
         /*implement the call for the modal here. I will open a dialog and nest a Carousel 
         within it containing an image of the media option and the link to it. The media component should be seperate from this because I 
         want to show it when the terminal is disabled.*/
@@ -52,6 +57,7 @@ export default function MediaTerminal() {
           response: "link-primary-300",
         }}
       />
+      <SocialMediaDialog visible={visible} />
     </div>
   );
 }
