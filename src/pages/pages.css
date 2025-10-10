@@ -87,11 +87,16 @@
   margin-bottom: 0.75rem;
 }
 
-.card-legend-style {
-  margin: -21px;
-  border-radius: 5px;
-  padding: 14px;
-  background: linear-gradient(to right, rgb(56, 56, 255), rgb(189, 75, 255));
+.p-fieldset {
+  border: 2px solid #b59dff;
+  border-radius: 8px;
+}
+
+.p-fieldset-legend {
+  padding: 5px 15px; /* Adjust padding */
+  background: linear-gradient(to left, rgb(91, 91, 248), #a78bfa);
+  color: white; /* Text color for the legend */
+  border-width: 0;
 }
 
 .scroll-panel li::before {

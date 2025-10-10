@@ -1,7 +1,6 @@
 import "./Pages.css";
 import { useNavigate } from "react-router-dom";
 import { Fieldset } from "primereact/fieldset";
-import { Card } from "primereact/card";
 import { Divider } from "primereact/divider";
 import { Button } from "primereact/button";
 import { ScrollPanel } from "primereact/scrollpanel";
