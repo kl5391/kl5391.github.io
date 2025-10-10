@@ -1,28 +1,17 @@
-import Navbar from './Navbar'
-import './App.css'
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Home from './pages/Home'
+import Navbar from "./Navbar";
+import "primereact/resources/themes/lara-dark-purple/theme.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AppRoutes from "./Routes";
+import { PrimeReactProvider, PrimeReactContext } from "primereact/api";
 
 function App() {
-  let component = <Home />
-  switch(window.location.pathname) {
-    case "/":
-      component = <Home />
-      break
-    case "/about":
-      component = <About />
-      break
-    case "/projects":
-      component = <Projects />
-      break
-  }
   return (
-  <>
-    <Navbar />
-    {component}
-  </>
-  )
+    <PrimeReactProvider>
+      <Router>
+        <AppRoutes />
+      </Router>
+    </PrimeReactProvider>
+  );
 }
 
-export default App
+export default App;

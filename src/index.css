@@ -1,19 +1,14 @@
-/* Global reset */
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dddddd;
   color: #fff;
 }
 
-/* Navigation bar */
 .nav {
-  width: 100%;            /* full width */
-  background-color: #1a1a1a;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #292929;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -24,18 +19,15 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  overflow: hidden;
+  margin-left: auto;
 }
 
-/* Site title */
-.site-title {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: default;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+.site-title img {
+  width: 3rem;
+  transform: scale(3);
 }
 
-/* Navigation links */
 .nav ul {
   padding: 0;
   margin: 0;
@@ -49,24 +41,17 @@ body {
   color: inherit;
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 0.5rem;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
 }
 
-/* Active and hover states */
-.nav li.active a {
+.nav a:hover {
   background-color: #555;
-  box-shadow: 0 0 8px #646cffaa;
-}
-
-.nav li:hover a {
-  background-color: #777;
-  background-blend-mode: soft-light;
   transform: scale(1.05);
 }
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -79,8 +64,7 @@ body {
     width: 100%;
   }
 
-  .nav li a {
+  .nav li {
     width: 100%;
-    text-align: left;
   }
 }
