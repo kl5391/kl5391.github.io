@@ -10,7 +10,10 @@ export default function MediaTerminal() {
 
     switch (command) {
       case "getInfo":
-        response = "https://www.google.com";
+        response = "Let's do this!";
+        /*implement the call for the modal here. I will open a dialog and nest a Carousel 
+        within it containing an image of the media option and the link to it. The media component should be seperate from this because I 
+        want to show it when the terminal is disabled.*/
         break;
 
       case "clear":
