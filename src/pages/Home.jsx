@@ -7,17 +7,28 @@ import { Button } from "primereact/button";
 import { ScrollPanel } from "primereact/scrollpanel";
 import { TabMenu } from "primereact/tabmenu";
 import { useState } from "react";
-import { Terminal } from "primereact/terminal";
+import MediaTerminal from "../media-terminal";
+import { SelectButton } from "primereact/selectbutton";
 
 export default function Home() {
   const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState(0);
+  const options = ["On", "Off"];
+  const [value, setValue] = useState(options[0]);
 
   const items = [
     { label: "Technical Skills" },
     { label: "Programming Languages & Frameworks" },
     { label: "Tools & Technologies" },
   ];
+
+  function FunMode({ value }) {
+    if (value == "On") {
+      return <MediaTerminal />;
+    } else if (value == "Off") {
+      return <h1>Aw man</h1>;
+    }
+  }
 
   function ListObject({ activeIndex }) {
     if (activeIndex == 0) {
@@ -69,7 +80,10 @@ export default function Home() {
     <>
       <div className="homepage">
         <div className="info-container">
-          <Fieldset legend="About me" className="info-card">
+          <Fieldset
+            legend={<h2 className="card-legend-style">About Me</h2>}
+            className="info-card"
+          >
             <h1 style={{ color: "#363636c7" }}>
               Thanks for visiting my page! My name is Kyle, and I'm a second
               year{" "}
@@ -85,11 +99,16 @@ export default function Home() {
             </h1>
           </Fieldset>
 
-          <Fieldset legend="What I Do" className="info-card">
-            <h1>
-              During my years at RIT, I’ve expanded those skills even further.
-              While I believe I can learn anything, I currently feel most
-              proficient in:
+          <Fieldset
+            legend={<h2 className="card-legend-style">What I Do</h2>}
+            className="info-card"
+          >
+            <h1 style={{ color: "#363636c7" }}>
+              During my years at RIT, I’ve expanded and developed hundreds of
+              new skills. While I believe I can learn anything,{" "}
+              <b style={{ color: "#000000dc" }}>
+                I currently feel that I am most proficient in:
+              </b>
             </h1>
             <div className="tabmenu-backdrop">
               <TabMenu
@@ -98,31 +117,43 @@ export default function Home() {
                 onTabChange={(e) => setActiveIndex(e.index)}
                 className="tab-menu"
               />
-              <ListObject
-                activeIndex={activeIndex}
-                style={{ width: "100%", height: "50px" }}
-              />
+              <ListObject activeIndex={activeIndex} />
             </div>
             <Button
               label="View My Projects"
-              onClick={() => navigate("/pages/projects")}
+              onClick={() => window.open("https://github.com/kl5391")}
               className="info-button"
+              size="large"
             />
           </Fieldset>
 
-          <Fieldset legend="What I'm Up To" className="info-card">
-            <h1 style={{ color: "black" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              varius mauris quis nisl tristique, at pellentesque lectus
-              vehicula. Maecenas ornare sit amet leo vitae elementum. Aliquam
-              pharetra efficitur lorem, porta congue sapien semper ut. Sed
-              sodales accumsan tellus non pharetra. Aenean pretium sem id
-              vulputate elementum. Mauris vehicula congue sem, quis congue purus
+          <Fieldset
+            legend={<h2 className="card-legend-style">What I'm Up To</h2>}
+            className="info-card"
+          >
+            <h1 style={{ color: "#363636c7" }}>
+              I’m currently working on building this personal website as a
+              project to showcase my skills and projects.{" "}
+              <b style={{ color: "#000000dc" }}>
+                It’s a hands-on exploration of modern web development, including
+                responsive design, dynamic layouts, and interactive UI elements.
+              </b>
             </h1>
           </Fieldset>
-
-          <Fieldset legend="Connect with me" className="info-card">
-            <Terminal />
+          <Fieldset
+            legend={<h2 className="card-legend-style">Connect With Me</h2>}
+            className="info-card"
+          >
+            <div className="fun-mode">
+              <h1>Fun mode?</h1>
+              <SelectButton
+                value={value}
+                onChange={(e) => setValue(e.value)}
+                options={options}
+              />
+            </div>
+            <Divider></Divider>
+            <FunMode value={value}></FunMode>
           </Fieldset>
         </div>
       </div>
