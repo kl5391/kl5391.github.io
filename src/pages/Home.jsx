@@ -8,6 +8,7 @@ import { TabMenu } from "primereact/tabmenu";
 import { useState } from "react";
 import MediaTerminal from "../media-terminal";
 import { SelectButton } from "primereact/selectbutton";
+import SocialMediaDialog from "../social-media-dialog";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -97,7 +98,6 @@ export default function Home() {
               RIT.
             </h1>
           </Fieldset>
-
           <Fieldset
             legend={<h2 className="card-legend-style">What I Do</h2>}
             className="info-card"

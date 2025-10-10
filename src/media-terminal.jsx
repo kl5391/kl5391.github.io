@@ -7,6 +7,12 @@ import { useState } from "react";
 export default function MediaTerminal() {
   const [visible, setVisible] = useState(false);
 
+  function SocialMediaCard({ visible }) {
+    if (visible == true) {
+      return <SocialMediaDialog visible={visible} setVisible={setVisible} />;
+    }
+  }
+
   const commandHandler = (text) => {
     let response;
     let argsIndex = text.indexOf(" ");
@@ -57,7 +63,7 @@ export default function MediaTerminal() {
           response: "link-primary-300",
         }}
       />
-      <SocialMediaDialog visible={visible} />
+      <SocialMediaCard visible={visible} />
     </div>
   );
 }

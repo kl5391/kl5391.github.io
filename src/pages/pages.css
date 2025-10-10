@@ -22,10 +22,15 @@
   gap: 2rem;
   justify-content: center;
   padding: 2rem;
-  max-width: 1200px; 
+  max-width: 1200px;
   zoom: 70%;
   margin: 0 auto;
   align-items: flex-start;
+}
+
+.p-dialog {
+  max-width: 800px;
+  min-height: fit-content;
 }
 
 .fun-mode h1 {
