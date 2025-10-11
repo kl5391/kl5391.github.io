@@ -16,10 +16,12 @@ export default function MediaTerminal() {
   const commandHandler = (text) => {
     let response;
     let argsIndex = text.indexOf(" ");
-    let command = argsIndex !== -1 ? text.substring(0, argsIndex) : text;
+    let command = String(
+      argsIndex !== -1 ? text.substring(0, argsIndex) : text
+    );
 
-    switch (command) {
-      case "getInfo":
+    switch (command.toLowerCase()) {
+      case "getinfo":
         response = "Let's do this!";
         setVisible(true);
         /*implement the call for the modal here. I will open a dialog and nest a Carousel 
