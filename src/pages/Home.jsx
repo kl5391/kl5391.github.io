@@ -9,6 +9,9 @@ import { useState } from "react";
 import MediaTerminal from "../media-terminal";
 import { SelectButton } from "primereact/selectbutton";
 import SocialMediaDialog from "../social-media-dialog";
+import DownloadButton from "../../interact-button";
+import InteractButton from "../../interact-button";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -97,7 +100,11 @@ export default function Home() {
               employee for the Information Technology Services department at
               RIT.
             </h1>
+            <Link to="/resume">
+              <InteractButton text={"View My Resume"} />
+            </Link>
           </Fieldset>
+
           <Fieldset
             legend={<h2 className="card-legend-style">What I Do</h2>}
             className="info-card"
@@ -118,12 +125,9 @@ export default function Home() {
               />
               <ListObject activeIndex={activeIndex} />
             </div>
-            <Button
-              label="View My Projects"
-              onClick={() => window.open("https://github.com/kl5391")}
-              className="info-button"
-              size="large"
-            />
+            <Link to="https://github.com/kl5391">
+              <InteractButton text={"See My Work"} />
+            </Link>
           </Fieldset>
 
           <Fieldset

@@ -64,6 +64,14 @@
     0 4px 6px -4px var(--shadow-color);
 }
 
+.download-button {
+  width: 50%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  max-height: min-content;
+}
+
 /* -- Unified Tab Menu & Content Panel -- */
 .tabmenu-backdrop {
   flex-grow: 1; /* Pushes button to the bottom */
