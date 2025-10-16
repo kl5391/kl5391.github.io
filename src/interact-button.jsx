@@ -1,6 +1,4 @@
-import React, { useRef } from "react";
 import { Button } from "primereact/button";
-import { Toast } from "primereact/toast";
 
 export default function InteractButton({ text }) {
   return (

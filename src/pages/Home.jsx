@@ -9,9 +9,10 @@ import { useState } from "react";
 import MediaTerminal from "../media-terminal";
 import { SelectButton } from "primereact/selectbutton";
 import SocialMediaDialog from "../social-media-dialog";
-import DownloadButton from "../../interact-button";
-import InteractButton from "../../interact-button";
+import DownloadButton from "../interact-button";
+import InteractButton from "../interact-button";
 import { Link } from "react-router-dom";
+import SocialMediaCard from "../social-media-card";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ export default function Home() {
     if (value == "On") {
       return <MediaTerminal />;
     } else if (value == "Off") {
-      return <h1>Aw man</h1>;
+      return <SocialMediaCard />;
     }
   }
 

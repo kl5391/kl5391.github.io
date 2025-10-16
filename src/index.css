@@ -6,8 +6,31 @@ body {
 }
 
 iframe {
-  height: 100vh;
+  height: 99vh;
   width: 100vw;
+}
+
+.p-splitter {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  border-style: none;
+  color: white;
+  background-image: radial-gradient(
+    ellipse,
+    rgb(255, 255, 255),
+    rgb(120, 52, 255)
+  );
+}
+
+.p-splitter img {
+  width: 60px;
+  padding-top: 5px;
+  margin: 10px;
+}
+
+.p-splitter-gutter-handle {
+  opacity: 1;
 }
 
 .nav {

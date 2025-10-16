@@ -1,5 +1,6 @@
 import { Dialog } from "primereact/dialog";
 import { Carousel } from "primereact/carousel";
+import SocialMediaCard from "./social-media-card";
 
 export default function SocialMediaDialog({ visible, setVisible }) {
   return (
@@ -12,7 +13,7 @@ export default function SocialMediaDialog({ visible, setVisible }) {
         setVisible(false);
       }}
     >
-      <h1>COMING SOON</h1>
+      <SocialMediaCard />
     </Dialog>
   );
 }
