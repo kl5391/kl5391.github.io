@@ -1,7 +1,7 @@
 import { Splitter, SplitterPanel } from "primereact/Splitter";
 import { Link } from "react-router-dom";
 import githublogo from "./assets/github-mark.png";
-import linkedinlogo from "./assets/linkedin-logo.svg";
+import linkedinlogo from "./assets/linkedin-logo.png";
 
 export default function SocialMediaCard() {
   return (
