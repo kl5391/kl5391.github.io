@@ -6,8 +6,8 @@ body {
 }
 
 iframe {
-  height: 99vh;
-  width: 100vw;
+  min-height: 99vh;
+  min-width: 100vw;
 }
 
 .p-splitter {
