@@ -8,8 +8,6 @@ import { TabMenu } from "primereact/tabmenu";
 import { useState } from "react";
 import MediaTerminal from "../media-terminal";
 import { SelectButton } from "primereact/selectbutton";
-import SocialMediaDialog from "../social-media-dialog";
-import DownloadButton from "../interact-button";
 import InteractButton from "../interact-button";
 import { Link } from "react-router-dom";
 import SocialMediaCard from "../social-media-card";
@@ -117,15 +115,14 @@ export default function Home() {
                 I currently feel that I am most proficient in:
               </b>
             </h1>
-            <div className="tabmenu-backdrop">
+            <span>
               <TabMenu
                 model={items}
                 activeIndex={activeIndex}
                 onTabChange={(e) => setActiveIndex(e.index)}
-                className="tab-menu"
               />
               <ListObject activeIndex={activeIndex} />
-            </div>
+            </span>
             <Link to="https://github.com/kl5391">
               <InteractButton text={"See My Work"} />
             </Link>

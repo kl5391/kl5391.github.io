@@ -71,15 +71,6 @@
   max-height: min-content;
 }
 
-/* -- Unified Tab Menu & Content Panel -- */
-.tabmenu-backdrop {
-  flex-grow: 1; /* Pushes button to the bottom */
-  margin-top: 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-  overflow: hidden; /* Keeps child corners rounded */
-}
-
 .p-fieldset {
   border: 2px solid #b59dff;
   border-radius: 8px;
@@ -96,6 +87,10 @@
   margin-top: 0.725em;
   padding-left: 1em;
   list-style: none;
+}
+
+.p-tabmenu {
+  font-size: clamp(12px, 1.5vw, 18px);
 }
 
 .p-scrollpanel-wrapper li::before {
