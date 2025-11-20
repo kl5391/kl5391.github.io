@@ -89,8 +89,9 @@
   list-style: none;
 }
 
-.p-tabmenu {
-  font-size: clamp(12px, 1.5vw, 18px);
+.p-menuitem-text {
+  margin: -0.275em;
+  font-size: clamp(11.5px, 1.3vw, 18px);
 }
 
 .p-scrollpanel-wrapper li::before {
