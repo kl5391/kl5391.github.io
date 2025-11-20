@@ -80,29 +80,35 @@
   overflow: hidden; /* Keeps child corners rounded */
 }
 
-.tab-menu {
-  /* Let PrimeReact styles handle most of this, just adjust font */
-  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
-}
-
-.scroll-panel {
-  background-color: #f9fafb;
-  padding: 1rem 1.5rem;
-  color: var(--text-secondary);
-  list-style: none; /* Remove default bullets */
-  margin: 0;
-}
-
-/* Style list items for a cleaner look */
-.scroll-panel li {
-  padding-left: 1.25rem;
-  position: relative;
-  margin-bottom: 0.75rem;
-}
-
 .p-fieldset {
   border: 2px solid #b59dff;
   border-radius: 8px;
+}
+
+.p-scrollpanel-wrapper {
+  background-color: #f9fafb;
+  color: var(--text-secondary);
+  height: 10em;
+  padding-right: 1.1em;
+}
+
+.p-scrollpanel-wrapper ul {
+  margin-top: 0.725em;
+  padding-left: 1em;
+  list-style: none;
+}
+
+.p-scrollpanel-wrapper li::before {
+  content: "✓ ";
+  padding-right: 0.3em;
+  color: rgba(119, 0, 255, 0.562);
+}
+
+.p-scrollpanel-wrapper li {
+  padding-top: 0.3em;
+  font-weight: bold;
+  padding-bottom: 0.3em;
+  font-size: 12pt;
 }
 
 .p-fieldset-legend {
@@ -110,14 +116,6 @@
   background: linear-gradient(to left, rgb(91, 91, 248), #a78bfa);
   color: white; /* Text color for the legend */
   border-width: 0;
-}
-
-.scroll-panel li::before {
-  content: "✓"; /* Checkmark for a nicer bullet */
-  position: absolute;
-  left: 0;
-  color: var(--accent-color);
-  font-weight: bold;
 }
 
 /* -- Button & Other Elements -- */

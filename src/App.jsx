@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import "primereact/resources/themes/lara-dark-purple/theme.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AppRoutes from "./Routes";

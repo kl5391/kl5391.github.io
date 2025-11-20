@@ -16,7 +16,7 @@ import SocialMediaCard from "../social-media-card";
 
 export default function Home() {
   const navigate = useNavigate();
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
   const options = ["On", "Off"];
   const [value, setValue] = useState(options[0]);
 
@@ -37,8 +37,8 @@ export default function Home() {
   function ListObject({ activeIndex }) {
     if (activeIndex == 0) {
       return (
-        <ScrollPanel style={{ width: "100%", height: "200px" }}>
-          <ul className="scroll-panel">
+        <ScrollPanel>
+          <ul>
             <li>Full Stack Development</li>
             <li>Database Management</li>
             <li>
@@ -52,8 +52,8 @@ export default function Home() {
       );
     } else if (activeIndex == 1) {
       return (
-        <ScrollPanel style={{ width: "100%", height: "200px" }}>
-          <ul className="scroll-panel">
+        <ScrollPanel>
+          <ul>
             <li>
               <strong>Backend:</strong> Java, Python, SQL, PostgreSQL, C
             </li>
@@ -68,8 +68,8 @@ export default function Home() {
       );
     } else if (activeIndex == 2) {
       return (
-        <ScrollPanel style={{ width: "100%", height: "200px" }}>
-          <ul className="scroll-panel">
+        <ScrollPanel>
+          <ul>
             <li>PostgreSQL</li>
             <li>Git, GitHub, GitLab</li>
             <li>CI/CD Pipelines</li>
