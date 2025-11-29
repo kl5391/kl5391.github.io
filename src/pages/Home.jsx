@@ -88,12 +88,12 @@ export default function Home() {
           >
             <h1>Thanks for visiting my page!</h1>
             <h1 style={{ color: "#363636c7", fontSize: 25 }}>
-              My name is Kyle, and I'm a second year{" "}
+              My name is Kyle and I'm a second year{" "}
               <b>Software Engineering student</b> who is currently studying at
               the
               <b> Rochester Institue of Technology</b>. I'm also a brother of{" "}
-              <b>Sigma Alpha Mu</b> and student employee for{" "}
-              <b>Information Technology Services</b> at RIT.
+              <b>Sigma Alpha Mu</b> and a student employee for the{" "}
+              <b>Information Technology Services</b> department at RIT.
             </h1>
             <Link to="/resume">
               <InteractButton text={"View My Resume"} />
