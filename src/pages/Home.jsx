@@ -86,15 +86,14 @@ export default function Home() {
             legend={<h2 className="card-legend-style">About Me</h2>}
             className="info-card"
           >
+            <h1>Thanks for visiting my page!</h1>
             <h1 style={{ color: "#363636c7" }}>
-              Thanks for visiting my page! My name is Kyle, and I'm a second
-              year{" "}
-              <b style={{ color: "#000000dc" }}>software engineering student</b>{" "}
-              who is currently studying at the
-              <b style={{ color: "#000000dc" }}>
-                {" "}
-                Rochester Institue of Technology.
-              </b>
+              My name is Kyle, and I'm a second year{" "}
+              <b>Software Engineering student</b> who is currently studying at
+              the
+              <b> Rochester Institue of Technology</b>. I'm also a brother of{" "}
+              <b>Sigma Alpha Mu</b> and student employee for{" "}
+              <b>Information Technology Services</b> at RIT.
             </h1>
             <Link to="/resume">
               <InteractButton text={"View My Resume"} />
