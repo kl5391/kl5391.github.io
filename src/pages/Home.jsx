@@ -87,7 +87,7 @@ export default function Home() {
             className="info-card"
           >
             <h1>Thanks for visiting my page!</h1>
-            <h1 style={{ color: "#363636c7" }}>
+            <h1 style={{ color: "#363636c7", fontSize: 25 }}>
               My name is Kyle, and I'm a second year{" "}
               <b>Software Engineering student</b> who is currently studying at
               the
