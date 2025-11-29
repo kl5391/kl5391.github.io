@@ -93,11 +93,8 @@ export default function Home() {
               who is currently studying at the
               <b style={{ color: "#000000dc" }}>
                 {" "}
-                Rochester Institue of Technology
+                Rochester Institue of Technology.
               </b>
-              . Beyond that, I'm a brother of Sigma Alpha Mu and a student
-              employee for the Information Technology Services department at
-              RIT.
             </h1>
             <Link to="/resume">
               <InteractButton text={"View My Resume"} />
