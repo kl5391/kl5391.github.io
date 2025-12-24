@@ -11,6 +11,7 @@ import { SelectButton } from "primereact/selectbutton";
 import InteractButton from "../interact-button";
 import { Link } from "react-router-dom";
 import SocialMediaCard from "../social-media-card";
+import Silk from "./Silk";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -80,6 +81,16 @@ export default function Home() {
 
   return (
     <>
+      <div className="silk-container">
+        <Silk
+          style={{ height: "100%", width: "100%" }}
+          speed={5}
+          scale={1}
+          color="#7B7481"
+          noiseIntensity={1.5}
+          rotation={0}
+        />
+      </div>
       <div className="homepage">
         <div className="info-container">
           <Fieldset

@@ -3,7 +3,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #dddddd;
   color: #fff;
-  zoom: 75%;
 }
 
 iframe {
@@ -35,51 +34,11 @@ iframe {
   opacity: 1;
 }
 
-.nav {
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #292929;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 0.5rem 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  overflow: hidden;
-  margin-left: auto;
-}
-
-.site-title img {
-  width: 3rem;
-  transform: scale(3);
-}
-
-.nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.nav a {
-  color: inherit;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 1rem 1rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  display: block;
-}
-
-.nav a:hover {
-  background-color: #555;
-  transform: scale(1.05);
+.silk-container {
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
 }
 
 @media (max-width: 768px) {
