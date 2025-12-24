@@ -55,7 +55,7 @@ export default function Home() {
           <ul>
             <li>
               <strong>Backend:</strong> Java, Python, TypeScript/JavaScript,
-              SQL, C++, C, Rust
+              SQL, C++, C
             </li>
             <li>
               <strong>Frontend:</strong> React, Angular, TypeScript, JavaScript
