@@ -15,7 +15,7 @@ import Silk from "./Silk";
 
 export default function Home() {
   const navigate = useNavigate();
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
   const options = ["On", "Off"];
   const [value, setValue] = useState(options[1]);
 
@@ -39,13 +39,13 @@ export default function Home() {
         <ScrollPanel>
           <ul>
             <li>Full Stack Development</li>
-            <li>Database Management</li>
+            <li>Agile Development & Peer Code Review</li>
             <li>
               Version Control (Git, GitHub, GitLab, GitHub Actions, CI/CD)
             </li>
+            <li>Database Management</li>
             <li>RESTful API Design</li>
             <li>Asynchronous Programming</li>
-            <li>Agile Development & Peer Code Review</li>
           </ul>
         </ScrollPanel>
       );
@@ -54,7 +54,8 @@ export default function Home() {
         <ScrollPanel>
           <ul>
             <li>
-              <strong>Backend:</strong> Java, Python, SQL, PostgreSQL, C
+              <strong>Backend:</strong> Java, Python, TypeScript/JavaScript,
+              SQL, C++, C, Rust
             </li>
             <li>
               <strong>Frontend:</strong> React, Angular, TypeScript, JavaScript
@@ -70,6 +71,7 @@ export default function Home() {
         <ScrollPanel>
           <ul>
             <li>PostgreSQL</li>
+            <li>Node.js</li>
             <li>Git, GitHub, GitLab</li>
             <li>CI/CD Pipelines</li>
             <li>Windows 10/11, macOS, Ubuntu, iOS</li>
@@ -85,7 +87,7 @@ export default function Home() {
           style={{ height: "100%", width: "100%" }}
           speed={5}
           scale={1}
-          color="#7B7481"
+          color="#d9aeffff"
           noiseIntensity={1.5}
           rotation={0}
         />
