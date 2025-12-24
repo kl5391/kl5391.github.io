@@ -145,8 +145,8 @@ export default function Home() {
             </h1>
             <h1 style={{ color: "#363636c7" }}>
               A full-stack web app combining a Python/Flask backend and React
-              frontendthat integrates with the Google Gemini API to analyze user
-              data and suggest viable stocks/orders based on historical
+              frontend that integrates with the Google Gemini API to analyze
+              user data and suggest viable stocks/orders based on historical
               patterns.
             </h1>
           </Fieldset>
