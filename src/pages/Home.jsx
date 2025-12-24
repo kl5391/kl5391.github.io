@@ -17,7 +17,7 @@ export default function Home() {
   const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState(1);
   const options = ["On", "Off"];
-  const [value, setValue] = useState(options[0]);
+  const [value, setValue] = useState(options[1]);
 
   const items = [
     { label: "Technical Skills" },
@@ -78,7 +78,6 @@ export default function Home() {
       );
     }
   }
-
   return (
     <>
       <div className="silk-container">
@@ -98,13 +97,13 @@ export default function Home() {
             className="info-card"
           >
             <h1>Thanks for visiting my page!</h1>
-            <h1 style={{ color: "#363636c7", fontSize: 25 }}>
+            <h1 style={{ color: "#363636c7" }}>
               My name is Kyle and I'm a second year{" "}
               <b>Software Engineering student</b> who is currently studying at
               the
-              <b> Rochester Institue of Technology</b>. I'm also a brother of{" "}
-              <b>Sigma Alpha Mu</b> and a student employee for the{" "}
-              <b>Information Technology Services</b> department at RIT.
+              <b> Rochester Institue of Technology</b>. This website serves as
+              the main page where you can find any relevant information about
+              me.
             </h1>
             <Link to="/resume">
               <InteractButton text={"View My Resume"} />
@@ -131,7 +130,7 @@ export default function Home() {
               <ListObject activeIndex={activeIndex} />
             </span>
             <Link to="https://github.com/kl5391">
-              <InteractButton text={"See My Work"} />
+              <InteractButton text={"View My Github"} />
             </Link>
           </Fieldset>
 
@@ -156,7 +155,11 @@ export default function Home() {
               <h1>Fun mode?</h1>
               <SelectButton
                 value={value}
-                onChange={(e) => setValue(e.value)}
+                onChange={(e) => {
+                  if (e.value) {
+                    setValue(e.value);
+                  }
+                }}
                 options={options}
               />
             </div>
