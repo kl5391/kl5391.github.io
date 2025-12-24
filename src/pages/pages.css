@@ -34,6 +34,10 @@
   margin-bottom: 7pt;
 }
 
+.p-fieldset-content {
+  margin-top: -1em;
+}
+
 /* -- Refined Info Card -- */
 .info-card {
   background: var(--card-bg);

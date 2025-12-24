@@ -140,13 +140,14 @@ export default function Home() {
             legend={<h2 className="card-legend-style">What I'm Up To</h2>}
             className="info-card"
           >
+            <h1 style={{ fontWeight: "bolder", margin: "0" }}>
+              Order Predictor
+            </h1>
             <h1 style={{ color: "#363636c7" }}>
-              I’m currently working on building this personal website as a
-              project to showcase my skills and projects.{" "}
-              <b style={{ color: "#000000dc" }}>
-                It’s a hands-on exploration of modern web development, including
-                responsive design, dynamic layouts, and interactive UI elements.
-              </b>
+              A full-stack web app combining a Python/Flask backend and React
+              frontendthat integrates with the Google Gemini API to analyze user
+              data and suggest viable stocks/orders based on historical
+              patterns.
             </h1>
           </Fieldset>
           <Fieldset
