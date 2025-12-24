@@ -54,8 +54,7 @@ export default function Home() {
         <ScrollPanel>
           <ul>
             <li>
-              <strong>Backend:</strong> Java, Python, TypeScript/JavaScript,
-              SQL, C++, C
+              <strong>Backend:</strong> Java, Python, SQL, C++, C
             </li>
             <li>
               <strong>Frontend:</strong> React, Angular, TypeScript, JavaScript
