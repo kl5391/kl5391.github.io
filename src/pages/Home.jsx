@@ -132,7 +132,7 @@ export default function Home() {
               <ListObject activeIndex={activeIndex} />
             </span>
             <Link to="https://github.com/kl5391">
-              <InteractButton text={"View My Github"} />
+              <InteractButton text={"View My GitHub"} />
             </Link>
           </Fieldset>
 
